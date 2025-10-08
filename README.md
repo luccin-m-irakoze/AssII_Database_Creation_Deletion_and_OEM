@@ -1,10 +1,5 @@
 # Oracle PDB and OEM Configuration Report
 
-**Student Name:** Luccin Irakoze  
-**Student ID:** 25815  
-**Course:** Oracle Database Administration (PL/SQL – AUCA)  
-**Date:** October 2025  
-
 ---
 
 ## 1. Overview of Tasks
@@ -19,7 +14,6 @@ A new PDB was created to store class work.
 
 - **PDB Name:** `lu_pdb_25815`  
 - **Admin User:** `luccin_plsqlauca_25815`  
-- **Password:** `Lu321`
 
 **SQL Command:**
 ```sql
@@ -63,8 +57,6 @@ DROP PLUGGABLE DATABASE lu_to_delete_pdb_25815 INCLUDING DATAFILES;
 
 *Result:* Both creation and deletion completed successfully.
 
-*(Insert screenshots for both steps here.)*
-
 ---
 
 ### Task 3 – Configure Oracle Enterprise Manager (OEM)
@@ -100,9 +92,6 @@ GRANT DBA, XDBADMIN, SELECT_CATALOG_ROLE TO luccin_plsqlauca_25815;
 **Login Details:**
 
 * **Username:** `luccin_plsqlauca_25815`
-* **Container:** `LU_PDB_25815`
-
-*(Insert screenshot of EM Express Dashboard showing username and container.)*
 
 ---
 
@@ -112,7 +101,6 @@ GRANT DBA, XDBADMIN, SELECT_CATALOG_ROLE TO luccin_plsqlauca_25815;
 | ---------------------------------- | -------------------------------------- | ---------------------------------------------------- |
 | ORA-01031: Insufficient Privileges | Running admin commands as non-SYS user | Reconnected as `SYS AS SYSDBA` and reissued commands |
 | “Not Implemented” error at `/em`   | Oracle 23ai Free lacks EM Express      | Installed Oracle 21c XE on a VM                      |
-| Invalid login in EM                | Used CDB instead of correct PDB        | Specified `LU_PDB_25815` as container during login   |
 
 ---
 
@@ -130,10 +118,17 @@ Through hands-on setup and problem-solving, I gained practical experience with O
 
 ## 4. Screenshots
 
-1. **PDB Creation –** `lu_pdb_25815`
-2. **PDB Deletion –** `lu_to_delete_pdb_25815`
-3. **OEM Dashboard –** (showing username and container)
+1. **PDB Creation –** `lu_pdb_25815`:
 
+   <img width="779" height="175" alt="Screenshot 2025-10-07 225249" src="https://github.com/user-attachments/assets/651aaf5b-942c-47b1-8a63-f4f367e65989" />
+
+3. **PDB Deletion –** `lu_to_delete_pdb_25815`:
+ 
+   <img width="629" height="238" alt="Screenshot 2025-10-07 225643" src="https://github.com/user-attachments/assets/2d643f7a-aacb-4243-89f5-84ddfd57b219" />
+
+5. **OEM Dashboard –** (showing username and container):
+
+   <img width="1522" height="954" alt="Screenshot 2025-10-07 232452" src="https://github.com/user-attachments/assets/588f24c6-5b88-4b04-ab89-00ba89c59a97" />
 ---
 
 > **Note:** Oracle 23ai Free does not include EM Express by default. To fulfill the lab requirements, Oracle 21c XE was installed in a Virtual Machine, which includes EM Express out-of-the-box.
