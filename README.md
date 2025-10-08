@@ -131,6 +131,6 @@ Through hands-on setup and problem-solving, I gained practical experience with O
    <img width="1522" height="954" alt="Screenshot 2025-10-07 232452" src="https://github.com/user-attachments/assets/588f24c6-5b88-4b04-ab89-00ba89c59a97" />
 ---
 
-> **Note:** Oracle 23ai Free does not include EM Express by default. To fulfill the lab requirements, Oracle 21c XE was installed in a Virtual Machine, which includes EM Express out-of-the-box.
+> **Issued Enountered:** Oracle 23ai Free does not include EM Express by default. To fulfill the lab requirements, Oracle 21c XE was installed in a Virtual Machine, which includes EM Express out-of-the-box.
 
 ```
